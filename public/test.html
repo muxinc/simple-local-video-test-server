@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Hello, Media World</title>
+  </head>
+  <body>
+    <h1>Hello, Media World</h1>
+    <div><button style="height: 40px">Reset to start time</button></div>
+    <video controls muted preload="auto"></video>
+    <script>
+      const videoEl = document.querySelector('video');
+      const headerEl = document.querySelector('h1');
+      const buttonEl = document.querySelector('button');
+
+      let startTime = 0;
+      const params = new URLSearchParams(window.location.search);
+      const src = params.get('src');
+      let headerStr = `<div>${headerEl.innerHTML}</div>`;
+      if (src) {
+        videoEl.src = src;
+        headerStr += `<div>src url: ${src}</div>`;
+        const time = params.get('time');
+        if (time) {
+          startTime = +time;
+          videoEl.currentTime = startTime;
+          headerStr += `<div>start time offset: ${time}s</div>`;
+        }
+      }
+
+      buttonEl.addEventListener('click', () => {
+        videoEl.currentTime = startTime;
+      })
+      headerEl.innerHTML = headerStr;
+    </script>
+  </body>
+</html>
