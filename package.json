@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start:ssl": "http-server -S -C cert.pem -c-1 --mimetypes mimetypes.types",
-    "start": "http-server -c-1 --cors --mimetypes mimetypes.types",
-    "start:cached": "http-server --cors --mimetypes mimetypes.types"
+    "start:ssl": "http-server -p 8789 -S -C cert.pem -c-1 --mimetypes mimetypes.types",
+    "start": "http-server -p 8789 -c-1 --cors --mimetypes mimetypes.types",
+    "start:cached": "http-server -p 8789 --cors --mimetypes mimetypes.types"
   },
   "devDependencies": {
     "http-server": "^14.1.1"
