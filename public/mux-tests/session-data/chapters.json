@@ -1,0 +1,56 @@
+[
+    {
+        "chapter": 1,
+        "start-time": 0,
+        "titles": [
+            {
+                "language": "en",
+                "title": "beginning"
+            },
+            {
+                "language": "es",
+                "title": "comienzo"
+            },
+            {
+                "language": "de",
+                "title": "Anfang"
+            }
+        ]
+    },
+    {
+        "chapter": 2,
+        "start-time": 10,
+        "titles": [
+            {
+                "language": "en",
+                "title": "middle"
+            },
+            {
+                "language": "es",
+                "title": "medio"
+            },
+            {
+                "language": "de",
+                "title": "Mitte"
+            }
+        ]
+    },
+    {
+        "chapter": 3,
+        "start-time": 20,
+        "titles": [
+            {
+                "language": "en",
+                "title": "end"
+            },
+            {
+                "language": "es",
+                "title": "fin"
+            },
+            {
+                "language": "de",
+                "title": "Ende"
+            }
+        ]
+    }
+]
