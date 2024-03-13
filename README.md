@@ -16,4 +16,4 @@ Uses a simple static server to host media files (with expected mimetype mappings
 - `npm run start`
 
 You can validate the server is running by opening the URL listed in `Available on:` after starting in Safari. The entire `/public` directory should be navigable via the browser. From there, you can try loading a particular media playlist, e.g.
-`/mux-tests/session-data/multivariant-with-mux-other-session-data.m3u8`
+`/mux-tests/session-data/multivariant-with-other-session-data.m3u8`
