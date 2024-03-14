@@ -1,3 +1,0 @@
-Trimmed asset based on https://stream.staging.mux.com/vfo1yOO9rqYUbMNRZyWauX5XcRyhu01TzDZpd93kzHNo.m3u8 original
-
-12 seconds from original (3 segments)
