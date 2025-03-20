@@ -11,19 +11,13 @@ The files that comprise the test streams follow a predictable format. For the po
 The path format is as follows
 
 Media Playlist:
-```
-/[version]/[human-readable-fake-id]/media.m3u8
-```
+`/[version]/[human-readable-fake-id]/media.m3u8`
 
 Init segment:
-```
-/[version]/[human-readable-fake-id]/init.mp4
-```
+`/[version]/[human-readable-fake-id]/init.mp4`
 
 Media segments:
-```
-/[version]/[human-readable-fake-id]/[non-padded-sequence-number].mp4
-```
+`/[version]/[human-readable-fake-id]/[non-padded-sequence-number].mp4`
 
 The basenames for the init segment and media segments are named similarly to what we expect in the final product (except the playlist explictly at 'media.m3u8').
 
