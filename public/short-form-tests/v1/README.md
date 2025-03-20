@@ -27,7 +27,7 @@ The paths differ for ease of testing and development, but the logic we need to p
 
 ### Create a Source fmp4 file
 
-Making this file is kind of a pain, but you can find a guide [here](https://www.notion.so/mux/Short-MP4-JIT-8e4297d1a7cd4a9d95f5874323c98184#0fc389e52e074fe0975c443f507549c2) if you want to try.
+Making this file is kind of a pain, but you can find a guide [here](https://www.notion.so/mux/Short-MP4-JIT-8e4297d1a7cd4a9d95f5874323c98184#0fc389e52e074fe0975c443f507549c2) if you want to try. We are going with the 'muxed audio/video with `sidx`' approach
 
 If you want to skip this step, there's a properly-formatted version [on notion](https://www.notion.so/mux/muxed-av-with-sidx-mp4-1bb97a7f89d080e499e4fb2596477a9a?pvs=4)
 
