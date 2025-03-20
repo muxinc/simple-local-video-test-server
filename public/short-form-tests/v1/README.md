@@ -4,7 +4,32 @@ These streams are intended as part of a proof-of-concept for short-form via HLS
 
 They were generated using ffmpeg, from an fmp4 file prepared for this purpose
 
-## How to generate the streams 
+## Path format
+
+The files that comprise the test streams follow a predictable format. For the poof-of-concept tests, this URL format differs slightly from the format proposed in the final product. It differs in ways that 1) allow for versioning (since we may iterate on the format of the files we generate) and 2) make the URLs human-readable.
+
+The path format is as follows
+
+Media Playlist:
+```
+/[version]/[human-readable-fake-id]/media.m3u8
+```
+
+Init segment:
+```
+/[version]/[human-readable-fake-id]/init.mp4
+```
+
+Media segments:
+```
+/[version]/[human-readable-fake-id]/[non-padded-sequence-number].mp4
+```
+
+The basenames for the init segment and media segments are named similarly to what we expect in the final product (except the playlist explictly at 'media.m3u8').
+
+The paths differ for ease of testing and development, but the logic we need to prove could work with any consistent path setup. It only *depends* on the basenames, and particularly the basenames of the init segment and media segments.
+
+## How to generate the streams
 
 ### Create a Source fmp4 file
 
