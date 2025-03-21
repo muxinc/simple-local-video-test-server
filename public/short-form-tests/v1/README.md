@@ -75,3 +75,5 @@ Computed info from media:
 If you don't have a favorite way of doing this, try HexFiend
 
 You want to find the 'Duration' in the `mvhd` box. It's 4 bytes long, and starts 16 bytes after the type field (`mvhd`). The timescale is immediately before it, so make sure your duration is in those units.
+
+If you are doing it this way, remember that mp4's are Big Endian, which is not HexFiend's default
