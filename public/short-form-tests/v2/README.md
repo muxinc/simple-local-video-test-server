@@ -39,7 +39,7 @@ If you want to skip this step, there's a properly-formatted version [on notion](
 ### Create the HLS stream
 
 ```shell
-# for example, if the filename is muxed-fragmented-with-sidx.mp4
+# for example, if the filename is muxed-fragmented-with-sidx.mp4 and its video stream was 60fps
 ffmpeg -i muxed-fragmented-with-sidx.mp4 -hls_segment_type fmp4 -hls_segment_filename '%d.mp4' -hls_list_size 0 -hls_flags append_list -c:a copy -c:v libx264 -x264-params keyint=300  media.m3u8
 ```
 
