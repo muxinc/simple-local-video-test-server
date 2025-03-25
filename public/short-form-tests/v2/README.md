@@ -7,7 +7,7 @@ They were generated using ffmpeg, from an fmp4 file prepared for this purpose
 ## Differences from v1
 
 * The streams in v2/ were generated from the same "fmp4-with-global-sidx" file, but were transcoded to have a keyframe interval of 5sec (300 frames of the 60fps video)
-  * Creating the stream this way means that our segments can be `5.0` seconds long, the exact same as our target duration
+  * Creating the stream this way means that our segments can be `5.0` seconds long, which is nicer math
 
 ## Path format
 
